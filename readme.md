@@ -6,14 +6,18 @@
 
 ### Preview
 
-### Features
+### Passos concluidos
 
 - [x] Criacao do banco de dados
 - [x] Instalacao do autoload via Composer
 - [x] Criacao das paginas *`header/footer`*
 - [x] Front end 
 - [x] Criacao das paginas *`Index/Formulario/Listagem`* 
-- [ ] .... Em construcao
+- [x] Criacao das query do banco de dados
+- [x] CREATE
+- [x] READ
+- [ ] UPDATE
+- [ ] DELETE
 
 ## Getting started
 

@@ -58,9 +58,7 @@ class Vaga{
 
         //RETORNAR SUCESSO
         return true;
-
   }
-
     /**
      * Método responsável por obter vagas do banco de dados
      * @param string $where
@@ -72,5 +70,15 @@ class Vaga{
     {
         return (new Database('vagas'))->select($where,$order,$limit)
                                             ->fetchAll(PDO::FETCH_CLASS,self::class);
+  }
+
+    /**
+     * Metodo responsavel por buscar uma vaga com base em seu ID
+     * @param integer $id
+     * @return Vaga
+     */
+    public static function  getVaga($id){
+        return (new Database('vagas'))->select('id = '.$id)
+                                            ->fetchObject(self::class);
   }
 }
