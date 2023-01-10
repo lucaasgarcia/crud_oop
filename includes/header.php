@@ -13,7 +13,7 @@
 <body class="bg-dark text-light">
 
 <div class="container">
-    <div class="jumbotron bg-danger">
-        <h1>Crud vagas</h1>
-        <p>crud com PHP orientado a objetos</p>
+    <div class="jumbotron bg-info">
+        <h1>Vagas</h1>
+        <p>Crud com PHP orientado a objetos</p>
     </div>

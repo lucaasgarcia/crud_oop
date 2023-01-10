@@ -70,7 +70,7 @@ class Database
     }
 
     /**
-     * Metodo responsavel por executar queries dentro do banco de dados
+     * Metodo responsavel por executar query dentro do banco de dados
      * @param string $query
      * @param array $params
      * @return PDOStatement
@@ -128,4 +128,47 @@ class Database
         //Executa a query
         return $this->execute($query);
     }
+
+
+    /**
+     * Metodo responsavel por executar atualizacoes no banco de dados
+     * @param integer $where
+     * @param array $values [ field => value ]
+     * @return boolean
+     */
+    public function update($where, $values)
+    {
+        //Dados da Query
+        $fields = array_keys($values);
+        //$fields = array_keys($values);
+
+        //Monta a query
+        $query ='UPDATE '.$this->table.' SET '.implode('=?,' ,$fields).'=? WHERE '.$where;
+        //$query = 'UPDATE '.$this->table.' SET '.implode('=?,',$fields).'= WHERE '.$where;
+
+        //Executar a query
+        $this->execute($query,array_values($values));
+        //$this->execute($query,array_values($values));
+
+        //Retorna sucesso
+        return true;
+    }
+
+    /***
+     * Metodo responsavel por excluir dados do banco
+     * @param string $where
+     * @return boolean
+     */
+    public function delete($where)
+    {
+        //Monta a query delete
+        $query = 'DELETE FROM '.$this->table.' WHERE '.$where;
+
+        //Executa a query
+        $this->execute($query);
+
+        //Retorna sucesso
+        return true;
+    }
+
 }

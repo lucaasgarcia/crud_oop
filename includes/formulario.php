@@ -14,12 +14,13 @@ use App\Entity\Vaga;
 
         <div class="form-group">
             <label>Titulo</label>
-            <input type="text" class="form-control" name="titulo" value="<?=$obVaga->titulo?>">
+            <input type="text" class="form-control" name="titulo">
+
         </div>
 
         <div class="form-group">
             <label>Descricao</label>
-            <textarea class="form-control" name="descricao"><?=$obVaga->descricao?></textarea>
+            <textarea class="form-control" name="descricao"></textarea>
         </div>
 
         <div class="form-group">
@@ -33,7 +34,7 @@ use App\Entity\Vaga;
 
                 <div class="form-check form-check-inline">
                     <label class="form-control">
-                        <input type="radio" name="ativo" value="n" <?=$obVaga->ativo == 'n' ? 'checked' : ''?> Inativo
+                        <input type="radio" name="ativo" value="n"> Inativo
                     </label>
                 </div>
             </div>

@@ -4,6 +4,8 @@
 
 *`CRUD`* Feito para fins de estudos e para o portifolio.
 
+
+
 ### Preview
 
 ### Passos concluidos
@@ -16,15 +18,15 @@
 - [x] Criacao das query do banco de dados
 - [x] CREATE
 - [x] READ
-- [ ] UPDATE
-- [ ] DELETE
+- [x] UPDATE
+- [x] DELETE
 
 ## Getting started
 
 ### 1. Clone este repositorio
 
 ```bash
-git clone ---
+git clone https://github.com/lucaasgarcia/crud_oop.git
 ```
 
 ### 2. Criacao do banco de dados
@@ -64,9 +66,6 @@ Alterar os dados nas *`const`* por padrao preenchi os dados da aplicacao MAMP(Ma
  * NAME = *`nome do banco de dados`*
  * USER = *`root`*
  * PASS = *`senha do root`*
-
-### 4. Executar o projeto
-....
 
 
 

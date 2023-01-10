@@ -59,6 +59,29 @@ class Vaga{
         //RETORNAR SUCESSO
         return true;
   }
+
+    /**
+     * Metodo responsavel por atualizar a vaga no banco
+     * @return boolean
+     */
+    public function  atualizar()
+    {
+        return (new Database('vagas'))->update('id - ' .$this->id, [
+                                                                            'titulo' => $this->titulo,
+                                                                            'descricao' => $this->descricao,
+                                                                            'ativo' => $this->ativo,
+                                                                            'data' => $this->data
+                                                                           ]);
+  }
+
+    /**
+     * Metodo responsavel por excluir a vaga do banco
+     * @return boolean
+     */
+    public function excluir()
+    {
+        return (new Database('vagas'))->delete('id = '.$this->id);
+    }
     /**
      * Método responsável por obter vagas do banco de dados
      * @param string $where
