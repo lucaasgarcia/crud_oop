@@ -4,9 +4,8 @@
 
 *`CRUD`* Feito para fins de estudos e para o portifolio.
 
-
-
 ### Preview
+![preview](/public/images/preview.png "Imagem de Preview")
 
 ### Passos concluidos
 
@@ -31,18 +30,18 @@ git clone https://github.com/lucaasgarcia/crud_oop.git
 
 ### 2. Criacao do banco de dados
 
-Aplicacao utilizada foi MAMP(MacOS), mas pode ser utilizado 
+>Aplicacao utilizada foi MAMP(MacOS), mas pode ser utilizado 
 qualquer aplicacao.
+>
+>>Criar um banco dados com o nome que preferir seguindo os dados abaixo.
 
-Criar um banco dados com o nome que preferir seguindo os dados abaixo.
+*5 Colunas*
 
-5 Colunas
-
-* id -> int(11) AUTO_INCREMENT
-* titulo -> varchar(255)
-* descricao -> text
-* ativo -> enum ('s', 'n')
-* data -> timestamp, CURRENT_TIME
+>* id -> int(11) AUTO_INCREMENT
+>* titulo -> varchar(255)
+>* descricao -> text
+>* ativo -> enum ('s', 'n')
+>* data -> timestamp, CURRENT_TIME
 
 
 *MySQL*
@@ -58,9 +57,9 @@ CREATE TABLE `vagas` (
 
 ### 3. Dados de conexao para o banco de dados
 
-Alterar os dados de conexao do banco de dados no arquivo *`Database.php`*
-
-Alterar os dados nas *`const`* por padrao preenchi os dados da aplicacao MAMP(MacOS)<br>
+>Alterar os dados de conexao do banco de dados no arquivo *`Database.php`*
+>
+>>Alterar os dados nas *`const`* por padrao preenchi os dados da aplicacao MAMP(MacOS)<br>
 
  * HOST = *`localhost`*
  * NAME = *`nome do banco de dados`*
