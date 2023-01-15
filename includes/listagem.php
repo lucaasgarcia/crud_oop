@@ -1,6 +1,4 @@
 <?php
-
-
     $mensagem = '';
     if(isset($_GET['status'])){
         switch ($_GET['status']) {
@@ -47,6 +45,34 @@
         <a href="cadastrar.php">
             <button type="button" class="btn btn-success">Nova vaga</button>
         </a>
+    </section>
+
+    <section>
+
+        <form method="get">
+            <div class="row my-4">
+
+                <div class="col">
+                    <label>Buscar por titulo</label>
+                    <input type="text" name="busca" class="form-control" value="<?=$busca?>">
+                </div>
+
+                <div class="col">
+                    <label>Status</label>
+                    <select name="status" class="form-control">
+                        <option value="">Todos</option>
+                        <option value="s">Ativa</option>
+                        <option value="n">Inativa</option>
+                    </select>
+                </div>
+                <div class="col d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                </div>
+
+            </div>
+        </form>
+
+
     </section>
 
     <section>

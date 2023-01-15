@@ -14,6 +14,6 @@
 
 <div class="container">
     <div class="jumbotron bg-info">
-        <h1>Vagas</h1>
+        <h1 href="index.php">Vagas</h1>
         <p>Crud com PHP orientado a objetos</p>
     </div>
