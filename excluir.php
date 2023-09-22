@@ -20,7 +20,7 @@ if(!$obVaga instanceof Vaga){
 }
 
 //Validacao do post
-if(isset($_POST['excluir'])){
+if(isset($_POST['Excluir'])){
 
     $obVaga->excluir();
 

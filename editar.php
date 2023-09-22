@@ -1,7 +1,7 @@
 <?php
 require __DIR__ .'/vendor/autoload.php';
 
-Define('TITLE', 'Editar vaga');
+Define('TITLE', 'Editar');
 
 use \App\Entity\Vaga;
 

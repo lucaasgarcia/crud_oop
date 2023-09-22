@@ -1,7 +1,7 @@
 <?php
 require __DIR__ .'/vendor/autoload.php';
 
-define('TITLE','Cadastrar vaga');
+define('TITLE','Registro');
 
 use \App\Entity\Vaga;
 

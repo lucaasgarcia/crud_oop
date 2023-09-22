@@ -32,7 +32,7 @@
 
     $resultados = strlen($resultados) ? $resultados : '<tr>
                                                         <td colspan="6" class="text-center">
-                                                               Nenhuma vaga encontrada
+                                                               Nenhum registro encontrado
                                                                </td>
                                                         </tr>'
 
@@ -43,7 +43,7 @@
 
     <section>
         <a href="cadastrar.php">
-            <button type="button" class="btn btn-success">Nova vaga</button>
+            <button type="button" class="btn btn-success">Nova registro</button>
         </a>
     </section>
 

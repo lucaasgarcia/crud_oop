@@ -13,7 +13,8 @@ $filtroStatus = in_array($filtroStatus,['s','n']) ? $filtroStatus : '';
 
 //Condicoes SQL
 $condicoes = [
-    strlen($busca) ? 'titulo LIKE "%'.str_replace(' ', '%',$busca).'"%' : null
+    strlen($busca) ? 'titulo LIKE "%'.str_replace(' ','%',$busca).'%' : null,
+    strlen($filtroStatus) ? 'ativo = "'.$filtroStatus.'"' : null
 ];
 
 //Clausulas WHERE
